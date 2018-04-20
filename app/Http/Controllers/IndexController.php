@@ -2,20 +2,22 @@
 
 namespace App\Http\Controllers;
 
+use App\Managers\CarInfoMgr;
 use App\Http\Controllers\Controller;
 
 class IndexController extends Controller
 {
 
     /**
-     * Show Index
+     * Index
      *
-     * @param  
-     * @return
      */
     public function show()
     {
-        return view('carlist', ['name' => 'James']);
+        $carInfoMgr = new CarInfoMgr();
+        $carList = $carInfoMgr->getCarList();
+        
+        return view('carList', ['carList' => $carList->toArray()]);
     }
 }
 

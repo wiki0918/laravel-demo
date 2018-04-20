@@ -97,12 +97,9 @@
                 <!-- Navigation -->
                 <nav id="nav">
                     <ul id="navlist" class="sf-menu clearfix">
-                            <li class="current"><a href="../">前往首頁</a></li>
-                            <li><a href="store/">好食市集</a></li>
-                            <li><a href="store/?t=fresh">農產市集</a></li>
-                            <li><a href="event/">農食活動</a></li>
-                            <li><a href="purchase/">訂單查詢</a></li>
-                            <li><a href="about/">關於我們</a></li>
+                            <li class="current"><a href="../">預約試車</a></li>
+                            <li><a href="purchase/">預約查詢</a></li>
+                            <li><a href="/car/announce">發佈新車</a></li>
                     </ul>
                 </nav>
             </div>
