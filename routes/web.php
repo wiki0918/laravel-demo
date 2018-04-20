@@ -11,10 +11,15 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+//Route::get('/', function () {
+//    return view('welcome');
+//});
+
+Route::get('/', 'IndexController@show');
+
 Route::get('foo', function () {
+    $users = DB::select('select * from car');
+    var_dump($users);
     return 'Hello World';
 });
 
