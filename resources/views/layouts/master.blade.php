@@ -67,10 +67,10 @@
                 <div class="container">
                     <div class="right-line clearfix">
                         <ul>
-                                <li><a href='user/signup.php'>管理</a></li><li><a href='user/'>登入</a></li>
+                                <li><a href='#'>註冊</a></li><li><a href='#'>登入</a></li>
                         </ul>
                         <div class="mobile-version">
-                                <a href='user/signup.php'>上架</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href='user/'>登入</a>
+                                <a href='#'>註冊</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#'>登入</a>
                         </div>
                     </div>
                     <div class="clear"></div>
@@ -97,7 +97,7 @@
                 <!-- Navigation -->
                 <nav id="nav">
                     <ul id="navlist" class="sf-menu clearfix">
-                            <li class="current"><a href="../">預約試車</a></li>
+                            <li class="current"><a href="../">預約租車</a></li>
                             <li><a href="purchase/">預約查詢</a></li>
                             <li><a href="/car/announce">發佈新車</a></li>
                     </ul>

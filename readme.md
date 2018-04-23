@@ -6,3 +6,7 @@ View
 
 - [Layout-master](https://github.com/wiki0918/laravel-demo/tree/master/resources/views/layouts/master.blade.php).
 - [Layout-child](https://github.com/wiki0918/laravel-demo/blob/master/resources/views/carlist.blade.php).
+
+Validation
+
+- [Form Requests]().

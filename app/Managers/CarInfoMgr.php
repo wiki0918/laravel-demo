@@ -9,7 +9,6 @@ class CarInfoMgr
     /**
      * get car list
      *
-     * @param  
      * @return $CarsList
      */
     public function getCarList()

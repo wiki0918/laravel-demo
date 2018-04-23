@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Managers\CarInfoMgr;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\AnnouncePost;
 
 class AdminController extends Controller
 {
@@ -18,16 +19,16 @@ class AdminController extends Controller
     }
     
     /**
-     * Save
+     * Save AnnouncePost
      *
      */
-    public function save()
+    public function save(AnnouncePost $request)
     {   
         $carData = $_POST;
         $carInfoMgr = new CarInfoMgr();
-        $result = $carInfoMgr->saveCarInfo($carData);
-        echo "<script>alert('test');</script>";
+        $carInfoMgr->saveCarInfo($carData);
         return redirect('/');
     }
+   
 }
 
