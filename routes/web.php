@@ -11,16 +11,24 @@
 |
 */
 
-//Route::get('/', function () {
-//    return view('welcome');
-//});
 
+//首頁,預約清單
 Route::get('/', 'IndexController@show');
 
-Route::get('foo', function () {
-    $users = DB::select('select * from car');
-    var_dump($users);
-    return 'Hello World';
-});
+//發布車型
+Route::get('car/announce', 'AdminController@announce');
 
-Route::get('user/{id}', 'UserController@show');
+//儲存車型
+Route::post('car/save', 'AdminController@save');
+
+//顧客預約
+Route::get('booking/{carId}', 'BookingController@reserve');
+
+//儲存預約
+Route::get('booking/save', 'bookingController@save');
+
+//檢視預約
+Route::get('booking/list', 'bookingController@list');
+
+
+
