@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Car;
 use App\Managers\CarInfoMgr;
 use App\Http\Controllers\Controller;
 
@@ -14,33 +15,39 @@ class IndexController extends Controller
      */
     public function show()
     {
-        $carInfoMgr = new CarInfoMgr();
-        $cars = $carInfoMgr->getCarList();
-        $carList = $cars->toArray();
-        $carFormatList = $this->format($carList);
-        return view('carList', ['carList' => $carFormatList]);
+        $cars = Car::paginate(6);
+
+        $carsData = [];
+        foreach ($cars->items() as $car) {
+            $carsData[] = $car->toArray();
+        }
+
+        $carFormatList = $this->format($carsData);
+        return view('carList', [
+            'cars' => $cars,
+            'carList' => $carFormatList,
+        ]);
     }
-    
+
     /**
      * Format carList
      * 
-     * @param  $carList
+     * @param  $carsData
      * @return $carFormatList
      */
-    protected function format($carList)
+    protected function format($carsData)
     {
-        $carInfoList = [];
-        if ($carList == ''){
-            return $carInfoList;
+        $carFormatList = [];
+        if ($carsData == '') {
+            return $carFormatList;
         }
-        foreach ($carList as $car) {
-            if(mb_strlen($car['description'],'utf-8') >= 60)
-            {
-                $car['description'] = mb_substr($car['description'],0,58,'utf-8')."...";
+        foreach ($carsData as $car) {
+            if (mb_strlen($car['description'], 'utf-8') >= 60) {
+                $car['description'] = mb_substr($car['description'], 0, 58, 'utf-8') . "...";
             }
             $carFormatList[] = $car;
         }
         return $carFormatList;
     }
-}
 
+}

@@ -98,7 +98,7 @@
                 <nav id="nav">
                     <ul id="navlist" class="sf-menu clearfix">
                             <li class="current"><a href="../">預約租車</a></li>
-                            <li><a href="purchase/">預約查詢</a></li>
+                            <li><a href="#">預約查詢</a></li>
                             <li><a href="/car/announce">發佈新車</a></li>
                     </ul>
                 </nav>

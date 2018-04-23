@@ -11,7 +11,7 @@
             <div class='col-md-4 col-sm-4'>
                 <div class='blog-item'>
                     <div class='blog-img'>
-                        <a href='event/?a=1060'>
+                        <a href='/booking/{{$car['id']}}'>
                             <div id='img' style='background-image: url({{$car['picture']}});'></div>
                         
                         <div class='calendar'>
@@ -28,6 +28,7 @@
             </div>
             <?php endforeach;?> 
         </div>
+        <center><?php echo $cars->links(); ?></center>
     </div>
 </div>
 @stop

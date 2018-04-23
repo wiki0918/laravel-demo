@@ -22,7 +22,7 @@ Route::get('car/announce', 'AdminController@announce');
 Route::post('car/save', 'AdminController@save');
 
 //顧客預約
-Route::get('booking/{carId}', 'bookingController@new');
+Route::get('booking/{carId}', 'BookingController@reserve');
 
 //儲存預約
 Route::get('booking/save', 'bookingController@save');

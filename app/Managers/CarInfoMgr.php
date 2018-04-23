@@ -6,6 +6,20 @@ use App\Models\Car;
 
 class CarInfoMgr
 {
+
+    /**
+     * get car list
+     *
+     * @param int $id
+     * @return $CarInfo
+     */
+    public function getCarInfo($id)
+    {
+        $CarInfo = Car::where('id', $id)
+                ->first();
+        return $CarInfo;
+    }
+
     /**
      * get car list
      *
@@ -16,7 +30,7 @@ class CarInfoMgr
         $CarList = Car::all();
         return $CarList;
     }
-    
+
     /**
      * save car info
      *
@@ -30,6 +44,8 @@ class CarInfoMgr
         $Car->description = $carData['description'];
         $Car->picture = $carData['picture'];
 
-        return $Car->save();;
+        return $Car->save();
+        ;
     }
+
 }
