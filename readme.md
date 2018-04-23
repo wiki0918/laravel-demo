@@ -6,16 +6,16 @@ View
 
 - [Layout master](https://github.com/wiki0918/laravel-demo/tree/master/resources/views/layouts/master.blade.php).
 - [Layout child](https://github.com/wiki0918/laravel-demo/blob/master/resources/views/carlist.blade.php).
-- [Form CSRF]().
+- Form [@csrf](https://github.com/wiki0918/laravel-demo/blob/develop/resources/views/carAnnounce.blade.php#L24).
 
 Pagination
 
-- [Database Results]()
-- [View Link]()
+- [Database Results](https://github.com/wiki0918/laravel-demo/blob/develop/app/Http/Controllers/IndexController.php#L18)
+- [View Link](https://github.com/wiki0918/laravel-demo/blob/develop/resources/views/carList.blade.php#L31)
 
 DataBase
 
-- [Query Builder]().
+- [Query Builder](https://github.com/wiki0918/laravel-demo/blob/develop/app/Managers/CarInfoMgr.php).
 
 Validation
 
