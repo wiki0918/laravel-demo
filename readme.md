@@ -15,7 +15,7 @@ Pagination
 
 DataBase
 
-- [Query Builder](https://github.com/wiki0918/laravel-demo/blob/develop/app/Managers/CarInfoMgr.php).
+- [Query Builder](https://github.com/wiki0918/laravel-demo/blob/develop/app/Managers/CarMgr.php).
 
 Validation
 
