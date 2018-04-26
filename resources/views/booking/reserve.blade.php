@@ -32,7 +32,6 @@
                     </div>
                 </div>
             </div>
-
             <div class="col-md-6">
                 <div class="check-aside">
                     <div class="mb20">
@@ -40,8 +39,48 @@
                             <div class="blog-img">
                                 <div class="blog-content">
                                     <h6>預約租車</h6>
-                                    <div class="order-box">
-                                        <p>...</p>
+                                    <br>
+                                    <div class="list-content">
+                                        <div class="list-down row">
+                                            <form class='form-horizontal' name='booking' action='/booking/save' method='post' enctype='multipart/form-data'>
+                                                @csrf
+                                                <input type='hidden' name='car_id' value='{{$carData['id']}}'>
+                                                <div class='second-row col-md-12'>
+                                                    <div class='col-md-12'>
+                                                        <label>你的名字<span>*</span></label>
+                                                        <input type='text' id='name' placeholder='' name='customer' value='' required=""><br>
+                                                    </div>
+                                                    <div class='col-md-12'>
+                                                        <label>試駕日期<span style='font-weight: bold;'>*</span></label>
+                                                        <select class='select'  id='reserve_date' name='reserve_date'>
+                                                            <?php foreach ($dateList as $date) { ?>
+                                                                <option>{{$date}}</option>
+                                                            <?php } ?>
+                                                        </select>
+
+                                                    </div>
+                                                </div>
+
+                                                <div class='second-row col-md-12'>
+                                                    <div class='col-md-6' id='show_alert'>
+                                                        <?php if ($errors->first()): ?>
+                                                            <div class="alert alert-danger" role="alert">{{ $errors->first() }}</div>
+                                                        <?php endif; ?>
+                                                    </div>
+
+                                                    <div class='col-md-6'>
+                                                        <button class='update' style='width:100%'' type='submit' >確認</button>
+                                                    </div>
+                                                </div>
+                                                <div class='second-row col-md-12'>
+                                                    <div class='col-md-8'>
+
+                                                    </div>
+                                                    <div class='col-md-4'><br>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
                                     </div>
 
                                 </div>

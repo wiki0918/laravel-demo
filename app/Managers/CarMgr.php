@@ -4,7 +4,7 @@ namespace App\Managers;
 
 use App\Models\Car;
 
-class CarInfoMgr
+class CarMgr
 {
 
     /**

@@ -25,10 +25,10 @@ Route::post('car/save', 'AdminController@save');
 Route::get('booking/{carId}', 'BookingController@reserve');
 
 //儲存預約
-Route::get('booking/save', 'bookingController@save');
+Route::post('booking/save', 'BookingController@save');
 
 //檢視預約
-Route::get('booking/list', 'bookingController@list');
+Route::get('booking/list', 'BookingController@list');
 
 
 
