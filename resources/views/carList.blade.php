@@ -11,7 +11,7 @@
             <div class='col-md-4 col-sm-4'>
                 <div class='blog-item'>
                     <div class='blog-img'>
-                        <a href='/booking/{{$car['id']}}'>
+                        <a href='/booking/car/{{$car['id']}}'>
                             <div id='img' style='background-image: url({{$car['picture']}});'></div>
                         
                         <div class='calendar'>

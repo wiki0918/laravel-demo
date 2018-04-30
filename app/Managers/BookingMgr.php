@@ -24,4 +24,17 @@ class BookingMgr
         ;
     }
 
+    /**
+     * get booking list
+     *
+     * @return $bookingList
+     */
+    public function getBookingList()
+    {
+        $bookingList = \DB::table('booking')
+                ->leftJoin('car', 'booking.car_id', '=', 'car.id')
+                ->get();
+        return $bookingList->toArray();
+    }
+
 }
