@@ -23,11 +23,25 @@ class BookingController extends Controller
         }
         $carData = $car->toArray();
         $dateList = $this->generateDate();
-        
+
         return view('booking/reserve', [
             'carData' => $carData,
-            'dateList'=>$dateList,
+            'dateList' => $dateList,
         ]);
+    }
+
+    /**
+     * reserve list
+     * 
+     */
+    public function bookList()
+    {
+        $listData = [];
+        $bookingMgr = new BookingMgr();
+        $bookinglist = $bookingMgr->getBookingList();
+        $bookinglistData = $this->formatBookinglist($bookinglist);
+
+        return view('booking/list', ['list' => $bookinglistData]);
     }
 
     /**
@@ -39,7 +53,7 @@ class BookingController extends Controller
         $bookingData = $_POST;
         $bookingMgr = new BookingMgr();
         $bookingMgr->saveBooking($bookingData);
-        return redirect('/');
+        return redirect('/booking/list');
     }
 
     /**
@@ -53,6 +67,24 @@ class BookingController extends Controller
             $dateList[] = date('Y-m-d', strtotime("+$day day"));
         }
         return $dateList;
+    }
+
+    /**
+     * generate date
+     * @return Array $dateLiat
+     */
+    protected function formatBookinglist($bookinglist)
+    {
+        $bookinglistData = [];
+        foreach ($bookinglist as $booking) {
+
+            $bookinglistData[] = [
+                'reserve_date' => $booking->reserve_date,
+                'customer' => $booking->customer,
+                'car_name' => $booking->name,
+            ];
+        }
+        return $bookinglistData;
     }
 
 }

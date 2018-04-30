@@ -2,11 +2,20 @@
 
 ## Laravel-Demo (Laravel 5.6)
 
+Model
+
+- [Models](https://github.com/wiki0918/laravel-demo/tree/master/app/Models)
+
 View
 
 - [Layout master](https://github.com/wiki0918/laravel-demo/tree/master/resources/views/layouts/master.blade.php).
 - [Layout child](https://github.com/wiki0918/laravel-demo/blob/master/resources/views/carlist.blade.php).
 - Form [@csrf](https://github.com/wiki0918/laravel-demo/blob/develop/resources/views/carAnnounce.blade.php#L24).
+
+Controller
+
+- [Controllers](https://github.com/wiki0918/laravel-demo/tree/master/app/Http/Controllers)
+
 
 Pagination
 
@@ -16,6 +25,7 @@ Pagination
 DataBase
 
 - [Query Builder](https://github.com/wiki0918/laravel-demo/blob/develop/app/Managers/CarMgr.php).
+- [Join Table](https://github.com/wiki0918/laravel-demo/blob/develop/app/Managers/BookingMgr.php#L34).
 
 Validation
 
