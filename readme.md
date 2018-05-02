@@ -29,5 +29,5 @@ DataBase
 
 Validation
 
-- [Form Requests Rules/Meaasges](https://github.com/wiki0918/laravel-demo/blob/master/app/Http/Requests/AnnouncePost.php).
+- [Form Requests Rules / Meaasges](https://github.com/wiki0918/laravel-demo/blob/master/app/Http/Requests/AnnouncePost.php).
 - [Validation](https://github.com/wiki0918/laravel-demo/blob/master/app/Http/Controllers/AdminController.php#L25).

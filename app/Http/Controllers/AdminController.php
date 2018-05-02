@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Managers\CarInfoMgr;
+use App\Managers\CarMgr;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\AnnouncePost;
 
@@ -25,7 +25,7 @@ class AdminController extends Controller
     public function save(AnnouncePost $request)
     {   
         $carData = $_POST;
-        $carInfoMgr = new CarInfoMgr();
+        $carInfoMgr = new CarMgr();
         $carInfoMgr->saveCarInfo($carData);
         return redirect('/');
     }

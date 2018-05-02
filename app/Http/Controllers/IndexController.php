@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Car;
 use App\Managers\CarMgr;
 use App\Http\Controllers\Controller;
 

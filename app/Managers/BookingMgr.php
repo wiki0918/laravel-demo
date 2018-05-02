@@ -17,11 +17,12 @@ class BookingMgr
      */
     public function saveBooking($bookingData)
     {
+        $bookingCleanData = array_map('strip_tags',$bookingData);
+        
         $Booking = new Booking();
-        $Booking->car_id = $bookingData['car_id'];
-        $Booking->customer = $bookingData['customer'];
-        $Booking->reserve_date = $bookingData['reserve_date'];
-
+        $Booking->car_id = $bookingCleanData['car_id'];
+        $Booking->customer = $bookingCleanData['customer'];
+        $Booking->reserve_date = $bookingCleanData['reserve_date'];
         return $Booking->save();
         ;
     }

@@ -54,10 +54,11 @@ class CarMgr
      */
     public function saveCarInfo($carData)
     {
+        $carClaenData = array_map('strip_tags',$carData);
         $Car = new Car();
-        $Car->name = $carData['name'];
-        $Car->description = $carData['description'];
-        $Car->picture = $carData['picture'];
+        $Car->name = $carClaenData['name'];
+        $Car->description = $carClaenData['description'];
+        $Car->picture = $carClaenData['picture'];
 
         return $Car->save();
         ;

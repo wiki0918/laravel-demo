@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Managers\BookingMgr;
 use App\Managers\CarMgr;
 use App\Http\Controllers\Controller;
+use App\Http\Requests\ReservePost;
 
 class BookingController extends Controller
 {
@@ -52,7 +53,7 @@ class BookingController extends Controller
      * save reserve
      * @param $_POST
      */
-    public function save()
+    public function save(ReservePost $request)
     {
         $bookingData = $_POST;
         $bookingMgr = new BookingMgr();
