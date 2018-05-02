@@ -2,8 +2,8 @@
 
 ## Laravel-Demo
 
-# Laravel Version : 5.6
-# Website : [cycle.tw](http://cycle.tw/)
+Laravel Version : 5.6
+Website : [cycle.tw](http://cycle.tw/)
 
 Model
 
