@@ -10,7 +10,7 @@ View
 
 - [Layout master](https://github.com/wiki0918/laravel-demo/tree/master/resources/views/layouts/master.blade.php).
 - [Layout child](https://github.com/wiki0918/laravel-demo/blob/master/resources/views/carlist.blade.php).
-- Form [@csrf](https://github.com/wiki0918/laravel-demo/blob/develop/resources/views/carAnnounce.blade.php#L24).
+- Form [@csrf](https://github.com/wiki0918/laravel-demo/blob/master/resources/views/carAnnounce.blade.php#L24).
 
 Controller
 
@@ -19,15 +19,15 @@ Controller
 
 Pagination
 
-- [Pagination](https://github.com/wiki0918/laravel-demo/blob/develop/app/Http/Controllers/IndexController.php#L18)
-- [View Link](https://github.com/wiki0918/laravel-demo/blob/develop/resources/views/carList.blade.php#L31)
+- [Pagination](https://github.com/wiki0918/laravel-demo/blob/master/app/Managers/CarMgr.php#L43)
+- [View Link](https://github.com/wiki0918/laravel-demo/blob/master/resources/views/carList.blade.php#L31)
 
 DataBase
 
-- [Query Builder](https://github.com/wiki0918/laravel-demo/blob/develop/app/Managers/CarMgr.php).
-- [Join Table](https://github.com/wiki0918/laravel-demo/blob/develop/app/Managers/BookingMgr.php#L34).
+- [Query Builder](https://github.com/wiki0918/laravel-demo/blob/master/app/Managers/CarMgr.php).
+- [Join Table](https://github.com/wiki0918/laravel-demo/blob/master/app/Managers/BookingMgr.php#L34).
 
 Validation
 
-- [Form Requests Rules/Meaasges](https://github.com/wiki0918/laravel-demo/blob/develop/app/Http/Requests/AnnouncePost.php).
-- [Validation](https://github.com/wiki0918/laravel-demo/blob/develop/app/Http/Controllers/AdminController.php#L25).
+- [Form Requests Rules/Meaasges](https://github.com/wiki0918/laravel-demo/blob/master/app/Http/Requests/AnnouncePost.php).
+- [Validation](https://github.com/wiki0918/laravel-demo/blob/master/app/Http/Controllers/AdminController.php#L25).
