@@ -15,6 +15,13 @@
 //首頁,預約清單
 Route::get('/', 'IndexController@show');
 
+//登入
+Route::get('admin/login', 'AdminController@login');
+Route::post('admin/signup', 'AdminController@signup');
+
+//登出
+Route::get('admin/logout', 'AdminController@logout');
+
 //發布車型
 Route::get('car/announce', 'AdminController@announce');
 
@@ -29,6 +36,7 @@ Route::post('booking/save', 'BookingController@save');
 
 //檢視預約
 Route::get('booking/list', 'BookingController@bookList');
+
 
 
 

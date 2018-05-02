@@ -67,10 +67,10 @@
                 <div class="container">
                     <div class="right-line clearfix">
                         <ul>
-                                <li><a href='/car/announce'>管理</a></li><li><a href='#'>登入</a></li>
+                                <li><a href='/car/announce'>管理</a></li><li><a href='/admin/login'>登入</a></li>
                         </ul>
                         <div class="mobile-version">
-                                <a href='/car/announce'>管理</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href='#'>登入</a>
+                                <a href='/car/announce'>管理</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href='/admin/login'>登入</a>
                         </div>
                     </div>
                     <div class="clear"></div>
