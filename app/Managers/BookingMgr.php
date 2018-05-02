@@ -7,6 +7,8 @@ use App\Models\Booking;
 class BookingMgr
 {
 
+    protected $offset = 5;
+
     /**
      * save booking
      *
@@ -27,14 +29,15 @@ class BookingMgr
     /**
      * get booking list
      *
-     * @return $bookingList
+     * @return $bookingPagination
      */
-    public function getBookingList()
+    public function getBookingPagination()
     {
-        $bookingList = \DB::table('booking')
+        $bookingPagination = \DB::table('booking')
                 ->leftJoin('car', 'booking.car_id', '=', 'car.id')
-                ->get();
-        return $bookingList->toArray();
+                ->paginate($this->offset);
+
+        return $bookingPagination;
     }
 
 }

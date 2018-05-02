@@ -19,7 +19,7 @@ Controller
 
 Pagination
 
-- [Database Results](https://github.com/wiki0918/laravel-demo/blob/develop/app/Http/Controllers/IndexController.php#L18)
+- [Pagination](https://github.com/wiki0918/laravel-demo/blob/develop/app/Http/Controllers/IndexController.php#L18)
 - [View Link](https://github.com/wiki0918/laravel-demo/blob/develop/resources/views/carList.blade.php#L31)
 
 DataBase

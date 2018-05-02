@@ -7,6 +7,9 @@ use App\Models\Car;
 class CarMgr
 {
 
+    protected $offset = 6;
+
+
     /**
      * get car list
      *
@@ -31,6 +34,18 @@ class CarMgr
         return $CarList;
     }
 
+
+    /**
+     * get car Pagination
+     *
+     * @return $CarsPagination
+     */
+    public function getCarPagination()
+    {
+        $CarsPagination = Car::paginate(6);
+        return $CarsPagination;
+    }    
+    
     /**
      * save car info
      *

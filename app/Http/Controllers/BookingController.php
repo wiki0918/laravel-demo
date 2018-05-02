@@ -36,12 +36,16 @@ class BookingController extends Controller
      */
     public function bookList()
     {
-        $listData = [];
+
         $bookingMgr = new BookingMgr();
-        $bookinglist = $bookingMgr->getBookingList();
+        $bookings = $bookingMgr->getBookingPagination();
+        $bookinglist = $bookings->items();
         $bookinglistData = $this->formatBookinglist($bookinglist);
 
-        return view('booking/list', ['list' => $bookinglistData]);
+        return view('booking/list', [
+            'bookings' => $bookings,
+            'bookinglist' => $bookinglistData,
+        ]);
     }
 
     /**

@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Car;
-use App\Managers\CarInfoMgr;
+use App\Managers\CarMgr;
 use App\Http\Controllers\Controller;
 
 class IndexController extends Controller
@@ -14,8 +14,9 @@ class IndexController extends Controller
      *
      */
     public function show()
-    {
-        $cars = Car::paginate(6);
+    {   
+        $carMgr = new CarMgr();
+        $cars = $carMgr->getCarPagination();
 
         $carsData = [];
         foreach ($cars->items() as $car) {
