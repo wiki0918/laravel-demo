@@ -67,10 +67,11 @@
                 <div class="container">
                     <div class="right-line clearfix">
                         <ul>
-                                <li><a href='/car/announce'>管理</a></li><li><a href='/admin/login'>登入</a></li>
+                                <?php echo session('user') ? "<li><a href='/admin/logout'>登出</a></li>" : "<li><a href='/admin/login'>登入</a></li>" ?>
                         </ul>
                         <div class="mobile-version">
-                                <a href='/car/announce'>管理</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href='/admin/login'>登入</a>
+                                <?php echo session('user') ? "<li><a href='/admin/logout'>登出</a></li>" : "<li><a href='/admin/login'>登入</a></li>" ?>
+                                
                         </div>
                     </div>
                     <div class="clear"></div>

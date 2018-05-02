@@ -2,7 +2,7 @@
 
 ## Laravel-Demo (5.6)
 
-<p> Website : [cycle.tw](http://cycle.tw/)</p>
+<p> Website : http://cycle.tw/</p>
 
 
 Model
@@ -39,4 +39,4 @@ DataBase
 
 Session
 
-- [Session]()
+- [Session](https://github.com/wiki0918/laravel-demo/blob/master/app/Http/Controllers/AdminController.php)
