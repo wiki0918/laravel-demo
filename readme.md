@@ -1,10 +1,9 @@
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
-## Laravel-Demo
-
-Laravel Version : 5.6
+## Laravel-Demo (5.6)
 
 Website : [cycle.tw](http://cycle.tw/)
+
 
 Model
 
