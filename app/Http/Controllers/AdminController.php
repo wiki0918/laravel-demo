@@ -24,9 +24,9 @@ class AdminController extends Controller
      */
     public function save(AnnouncePost $request)
     {   
-        $carData = $_POST;
+        $postData = $request->input();
         $carInfoMgr = new CarMgr();
-        $carInfoMgr->saveCarInfo($carData);
+        $carInfoMgr->saveCarInfo($postData);
         return redirect('/');
     }
    

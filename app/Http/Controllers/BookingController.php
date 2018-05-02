@@ -55,9 +55,9 @@ class BookingController extends Controller
      */
     public function save(ReservePost $request)
     {
-        $bookingData = $_POST;
+        $postData = $request->input();
         $bookingMgr = new BookingMgr();
-        $bookingMgr->saveBooking($bookingData);
+        $bookingMgr->saveBooking($postData);
         return redirect('/booking/list');
     }
 

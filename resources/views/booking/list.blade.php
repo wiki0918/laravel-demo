@@ -14,7 +14,7 @@
             <table class="table"  align="center">
                 <thead>
                     <tr>
-                        <th scope="col">預約日期</th>
+                        <th scope="col">租車日期</th>
                         <th scope="col">汽車</th>
                         <th scope="col">預約人</th>
                     </tr>

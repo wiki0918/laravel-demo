@@ -25,6 +25,7 @@ class ReservePost extends FormRequest
     {
         return [
             'customer' => 'required|MAX:10',
+            'reserve_date' => 'required',
         ];
     }
     
@@ -37,6 +38,7 @@ class ReservePost extends FormRequest
     {
         return [
             'customer.required' => '請填寫姓名',
+            'reserve_date.required' => '請選擇日期',
             'customer.m_a_x' => '姓名不可超過10個字',
         ];
     }
