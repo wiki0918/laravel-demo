@@ -11,7 +11,7 @@ class CarMgr
 
 
     /**
-     * get car list
+     * get car info
      *
      * @param int $id
      * @return $CarInfo
