@@ -34,9 +34,14 @@ Route::get('booking/car/{carId}', 'BookingController@reserve');
 //儲存預約
 Route::post('booking/save', 'BookingController@save');
 
-//檢視預約
-Route::get('booking/list', 'BookingController@bookList');
+//檢視預約list
+Route::get('booking/list', 'BookingController@bookingList');
 
+//檢視預約的資料
+Route::get('booking/date', 'BookingController@bookingListByDate');
+
+//預約的資料(json)
+Route::get('booking/json', 'BookingController@jsonListByDate');
 
 
 

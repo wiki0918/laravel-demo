@@ -40,3 +40,8 @@ DataBase
 Session
 
 - [Session](https://github.com/wiki0918/laravel-demo/blob/master/app/Http/Controllers/AdminController.php)
+
+Api
+
+- [url (JSON格式)]
+- [jQuery.ajax()]

@@ -36,7 +36,7 @@
 	<link rel="stylesheet" type="text/css" href="https://iseeyou.com.tw/sweet_theme/css/style.css" media="screen">
 	<link rel="stylesheet" type="text/css" href="https://iseeyou.com.tw/sweet_theme/css/responsive.css" media="screen">
 
-
+	<script type="text/javascript" src="https://iseeyou.com.tw/sweet_theme/js/jquery.min.js"></script>
 
 </head>
 
@@ -99,7 +99,8 @@
                 <nav id="nav">
                     <ul id="navlist" class="sf-menu clearfix">
                             <li class=""><a href="../">預約租車</a></li>
-                            <li><a href="/booking/list">預約查詢</a></li>
+                            <li><a href="/booking/list">預約查詢1</a></li>
+                            <li><a href="/booking/date">預約查詢2</a></li>
                     </ul>
                 </nav>
             </div>
@@ -133,7 +134,7 @@
         <!-- End footer -->
 
 
-	<script type="text/javascript" src="https://iseeyou.com.tw/sweet_theme/js/jquery.min.js"></script>
+
 	<script type="text/javascript" src="https://iseeyou.com.tw/sweet_theme/js/jquery.superfish.js"></script>
 	<script type="text/javascript" src="https://iseeyou.com.tw/sweet_theme/js/jquery.bxslider.js"></script>
 	<script type="text/javascript" src="https://iseeyou.com.tw/sweet_theme/js/bootstrap.js"></script>

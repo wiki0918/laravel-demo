@@ -51,7 +51,7 @@
                                                         <input type='text' id='name' placeholder='' name='customer' value='' required=""><br>
                                                     </div>
                                                     <div class='col-md-12'>
-                                                        <label>試駕日期<span style='font-weight: bold;'>*</span></label>
+                                                        <label>租車日期<span style='font-weight: bold;'>*</span></label>
                                                         <select class='select'  id='reserve_date' name='reserve_date'>
                                                             <?php foreach ($dateList as $date) { ?>
                                                                 <option>{{$date}}</option>

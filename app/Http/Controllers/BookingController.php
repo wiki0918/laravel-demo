@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Managers\BookingMgr;
 use App\Managers\CarMgr;
+use App\Models\Booking;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\ReservePost;
 
@@ -32,10 +33,10 @@ class BookingController extends Controller
     }
 
     /**
-     * reserve list
+     * booking list
      * 
      */
-    public function bookList()
+    public function bookingList()
     {
 
         $bookingMgr = new BookingMgr();
@@ -50,8 +51,33 @@ class BookingController extends Controller
     }
 
     /**
+     * booking list by date
+     * 
+     */
+    public function bookingListByDate()
+    {
+        $dateList = $this->generateDate();
+
+        return view('booking/date', [
+            'dateList' => $dateList,
+        ]);
+    }
+
+    /**
+     * json list by date
+     * 
+     */
+    public function jsonListByDate()
+    {
+        $date = $_GET['date'];
+        $bookingMgr = new BookingMgr();
+        $bookings = $bookingMgr->getBookingPaginationByDate($date);
+        return $bookings;
+    }
+
+    /**
      * save reserve
-     * @param $_POST
+     * @param $request
      */
     public function save(ReservePost $request)
     {

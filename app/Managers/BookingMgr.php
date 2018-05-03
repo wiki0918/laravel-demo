@@ -41,4 +41,22 @@ class BookingMgr
         return $bookingPagination;
     }
 
+
+    /**
+     * get booking list
+     *
+     * @param $date
+     * @return $bookingPagination
+     */
+    public function getBookingPaginationByDate($date)
+    {
+        $bookingPagination = \DB::table('booking')
+                ->where('reserve_date',$date)
+                ->leftJoin('car', 'booking.car_id', '=', 'car.id')
+                ->paginate();
+
+        return $bookingPagination;
+    }    
+    
+    
 }
