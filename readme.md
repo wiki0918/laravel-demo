@@ -43,5 +43,5 @@ Session
 
 Api
 
-- [url (JSON格式)]
-- [jQuery.ajax()]
+- [url (JSON)](http://cycle.tw/booking/json?date=2018-05-06)
+- [jQuery.ajax()](https://github.com/wiki0918/laravel-demo/blob/master/public/js/booking_date.js)
