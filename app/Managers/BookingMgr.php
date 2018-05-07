@@ -57,6 +57,17 @@ class BookingMgr
 
         return $bookingPagination;
     }    
-    
+
+    /**
+     * get bookings
+     *
+     * @return $bookings
+     */
+    public function getBookings()
+    {
+        $bookings = Booking::all();
+
+        return $bookings;
+    }   
     
 }

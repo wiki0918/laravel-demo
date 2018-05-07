@@ -56,10 +56,17 @@ class BookingController extends Controller
      */
     public function bookingListByDate()
     {
-        $dateList = $this->generateDate();
-
+        $dateOptipns = [];
+        $bookingMgr = new BookingMgr();
+        $bookings = $bookingMgr->getBookings();
+        foreach ($bookings->toArray() as $booking) {
+            $dateOptipns[] = $booking['reserve_date'];
+        }
+        $dateOptipns = array_unique($dateOptipns);
+        $dateOptipns = array_sort($dateOptipns);
+        
         return view('booking/date', [
-            'dateList' => $dateList,
+            'dateOptipns' => $dateOptipns,
         ]);
     }
 

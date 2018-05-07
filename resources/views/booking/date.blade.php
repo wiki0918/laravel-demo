@@ -16,7 +16,7 @@
             <div class='col-md-12'>
                 <h3>租車日期
                     <select class=''  id='reserve_date' name='reserve_date'>
-                        <?php foreach ($dateList as $date) { ?>
+                        <?php foreach ($dateOptipns as $date) { ?>
                             <option>{{$date}}</option>
                         <?php } ?>
 
