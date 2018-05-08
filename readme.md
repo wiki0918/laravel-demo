@@ -1,9 +1,14 @@
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
 
-## Laravel-Demo (5.6)
+
+## Information
 
 <p> Website : http://cycle.tw/</p>
+<p> PHP 7.1</p>
+<p> MySQL</p>
 
+
+## Laravel 5.6
 
 Model
 
