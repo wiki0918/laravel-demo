@@ -30,7 +30,7 @@ Form
 Validation
 
 - [Form Requests Rules / Meaasges](https://github.com/wiki0918/laravel-demo/blob/master/app/Http/Requests/ReservePost.php).
-- [Validation](https://github.com/wiki0918/laravel-demo/blob/master/app/Http/Controllers/BookingController.php#L56).
+- [Validation](https://github.com/wiki0918/laravel-demo/blob/master/app/Http/Controllers/BookingController.php#L89).
 
 Pagination
 
@@ -40,7 +40,7 @@ Pagination
 DataBase
 
 - [Query Builder](https://github.com/wiki0918/laravel-demo/blob/master/app/Managers/CarMgr.php).
-- [Join Table](https://github.com/wiki0918/laravel-demo/blob/master/app/Managers/BookingMgr.php#L34).
+- [Join Table](https://github.com/wiki0918/laravel-demo/blob/master/app/Managers/BookingMgr.php#L35).
 
 Cookie / Session
 
