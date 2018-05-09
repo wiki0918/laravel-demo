@@ -42,7 +42,7 @@ DataBase
 - [Query Builder](https://github.com/wiki0918/laravel-demo/blob/master/app/Managers/CarMgr.php).
 - [Join Table](https://github.com/wiki0918/laravel-demo/blob/master/app/Managers/BookingMgr.php#L34).
 
-Session
+Cookie / Session
 
 - [Session](https://github.com/wiki0918/laravel-demo/blob/master/app/Http/Controllers/AdminController.php)
 
